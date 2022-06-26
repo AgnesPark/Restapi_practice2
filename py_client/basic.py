@@ -3,7 +3,7 @@ import requests
 
 # endpoint = "https://httpbin.org/status/200"
 # endpoint = "https://httpbin.org/anything"
-endpoint = "https://localhost:8000/api/" # "https://127.0.0.1:8000/"
+endpoint = "http://localhost:8000/api/" # "https://127.0.0.1:8000/"
 
 get_response = requests.get(endpoint, params={"abc":123}, json={"product_id": 123 }) # HTTTP Request
 # print(get_response.text) # print raw text response
