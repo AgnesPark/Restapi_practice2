@@ -5,12 +5,12 @@ import requests
 # endpoint = "https://httpbin.org/anything"
 endpoint = "https://localhost:8000/api/" # "https://127.0.0.1:8000/"
 
-get_response = requests.get(endpoint, json={"query":"Hello world"}) # HTTTP Request
-print(get_response.text) # print raw text response
-print(get_response.status_code)
+get_response = requests.get(endpoint, params={"abc":123}, json={"product_id": 123 }) # HTTTP Request
+# print(get_response.text) # print raw text response
+# print(get_response.status_code)
 
 # HTTP Request -> HTML
 # REST API HTTP Request -> JSON
 # JavaScript Object Notation ~ Python Dict
-print(get_response.json()['message'])
+print(get_response.json())
 # print(get_response.status_code)
